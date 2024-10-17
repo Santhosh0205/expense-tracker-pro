@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <p>Welcome to Expense Tracker Pro</p>
+        <div id="expense-forms">
+            <h3>Group Expense</h3>
+            <form id="group-expense-form">
+                <label for="group-name">Group Name:</label>
+                <input type="text" id="group-name" name="group-name" required>
+                <label for="group-amount">Amount:</label>
+                <input type="number" id="group-amount" name="group-amount" required>
+                <label for="group-description">Description:</label>
+                <textarea id="group-description" name="group-description"></textarea>
+                <button type="submit">Add Expense</button>
+            </form>
+            <h3>Private Expense</h3>
+            <form id="private-expense-form">
+                <label for="private-amount">Amount:</label>
+                <input type="number" id="private-amount" name="private-amount" required>
+                <label for="private-description">Description:</label>
+                <textarea id="private-description" name="private-description"></textarea>
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+        <button id="expense-history">Expense History</button>
+        <div id="expense-history-container"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Make sure this is at the bottom -->
+</body>
+</html>
